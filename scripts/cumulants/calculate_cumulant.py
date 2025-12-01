@@ -149,8 +149,6 @@ MODEL = sys.argv[1].lower()
 if MODEL not in ["mace", "pet", "dpa", "uma"]:
     raise ValueError(f"Invalid model")
 
-OUTPUT_PATH = f"./data/features/mad/cumulants/{order}_cumulant_{MODEL}"
-
 
 def main():
     dataset = ase.io.read("./data/xyz/mad-test-consistent.xyz", ":")
@@ -160,7 +158,10 @@ def main():
 
     for order in range(1, 9):
         desc = construct_struct_feats_cumulant(feats, dataset, order)
+        
+        OUTPUT_PATH = f"./data/features/mad/cumulants/{order}_cumulant_{MODEL}"
         np.save(OUTPUT_PATH, desc)
+
         print(f"saved order {order} cumulant:", desc.shape, desc.dtype)
 
 
