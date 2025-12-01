@@ -6,7 +6,7 @@ import sys
 
 
 if len(sys.argv) < 2:
-    print("Usage: python get_llfs.py.py [dpa_branch]")
+    print("Usage: python get_llfs.py [dpa_branch]")
     sys.exit(1)
 
 task = sys.argv[1]
@@ -15,7 +15,7 @@ print("task", task)
 if task not in ["Mptraj", "Omat24", "OC20M", "SPICE2", "ODAC23"]:
     raise ValueError(f"Invalid model name")
 
-OUTPUT_PATH = f"/work/cosmo/chorna/carto-speedrun/alex/dpa/dpa-{task}"
+OUTPUT_PATH = f"data/features/mad/umlips/dpa/dpa-{task}"  #  or "data/features/alexandria/umlips/dpa/dpa-{task}"
 print("OUTPUT_PATH", OUTPUT_PATH)
 
 DATASET_PATH = (
@@ -23,7 +23,7 @@ DATASET_PATH = (
 )
 print("DATASET_PATH", DATASET_PATH)
 
-MODEL_PATH = f"./models/dpa3.1_{task}.pth"
+MODEL_PATH = f"./models/dpa/dpa3.1_{task}.pth"
 
 
 def process_deepmd_features(deepmd_features, device):
