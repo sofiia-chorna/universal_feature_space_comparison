@@ -12,7 +12,7 @@ from src.errors import compute_model_vs_model
 from src.utils import get_stratified_indices
 
 
-KEY = "pet"
+KEY = "mad"
 SAVE_DIR = "./results/reconstruction_errors/variants/pet"
 os.makedirs(SAVE_DIR, exist_ok=True)
 
