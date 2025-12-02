@@ -17,7 +17,7 @@ os.makedirs(SAVE_DIR, exist_ok=True)
 
 # ALEXANDRIA
 """
-KEY = "salex"
+KEY = "alexandria"
 DATASET_PATH = "data/xyz/alex_val_sub_consistent.xyz"
 FEAT_PATHS = {
     "dpa": "data/features/alexandria/umlips/dpa-Omat24.npy",
