@@ -7,28 +7,18 @@ import vesin.metatomic as vesin_metatomic
 from metatrain.utils.io import load_model as load_metatrain_model
 
 
-if len(sys.argv) != 3:
-    print("Usage: python3 get_pet_features.py <model_key> <LL|BB>")
+if len(sys.argv) != 2:
+    print("Usage: python3 get_pet_features.py <model_key>")
     sys.exit(1)
 
 MODEL_KEY = sys.argv[1].lower()
-VARIANT = sys.argv[2].upper()
-if VARIANT not in ["LL", "BB"]:
-    raise ValueError("Second argument must be LL or BB")
-
-
 MODEL_PATHS = {
-    # uPET large-scale models
-    "omatpes": "models/pet/pet-omatpes-l-v0.1.0.pt",
-    "omat-l": "models/pet/pet-omat-l-v1.0.0.pt",
-    "omat-m": "models/pet/pet-omat-m-v1.0.0.pt",
-    "omat-s": "models/pet/pet-omat-s-v1.0.0.pt",
-    "omat-xs": "models/pet/pet-omat-xs-v1.0.0.pt",
-    "oam": "models/pet/pet-oam-l-v0.1.0.pt",
-    "spice-l": "models/pet/pet-spice-l-v1.0.0.pt",
-    "omad": "models/pet/pet-omad-l-v0.1.0.pt",
-    # PET-MAD-DOS
-    "pet-mad-dos": "models/pet/pet-mad-dos.pt",
+    "pet-mad": "models/pet/pet-mad-v1.0.2.pt",
+    "bespoke": "scripts/fine-tuning/bespoke/model.pt",
+    "ff": "scripts/fine-tuning/ff/model.pt",
+    "hf": "scripts/fine-tuning/ff/model.pt",
+    "ftl": "scripts/fine-tuning/ftl/model.pt",
+    "htl":  "scripts/fine-tuning/htl/model.pt",
 }
 
 if MODEL_KEY not in MODEL_PATHS:
@@ -37,25 +27,17 @@ if MODEL_KEY not in MODEL_PATHS:
     sys.exit(1)
 
 MODEL_PATH = MODEL_PATHS[MODEL_KEY]
-
-
-DATASET_PATH = (
-    "data/xyz/mad-test-consistent.xyz"  # or "data/xyz/alex_val_sub_consistent.xyz"
-)
-OUTPUT_DIR = "data/features/mad/umlips/pet"
+DATASET_PATH = "./data/raw/lips/LPS.extxyz"
+OUTPUT_DIR = f"data/features/lips"
 
 device = "cuda"
 
-REQUEST_KEY = "mtt::aux::energy_last_layer_features" if VARIANT == "LL" else "features"
+REQUEST_KEY = "mtt::aux::energy_last_layer_features" 
+# or REQUEST_KEY = "mtt::aux::LPS_last_layer_features" if with new attached head (tranfer learning)
 
-OUTPUT_PATH = (
-    f"{OUTPUT_DIR}/{MODEL_KEY}.npy"
-    if VARIANT == "LL"
-    else f"{OUTPUT_DIR}/{MODEL_KEY}_bb.npy"
-)
+OUTPUT_PATH =  f"{OUTPUT_DIR}/{MODEL_KEY}.npy"
 
 print("Model:", MODEL_KEY)
-print("Variant:", VARIANT)
 print("Model path:", MODEL_PATH)
 print("Requested key:", REQUEST_KEY)
 print("Output path:", OUTPUT_PATH)

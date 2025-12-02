@@ -211,3 +211,4 @@ data/
 **/*/*.ckpt
 **/*/*.xyz
 **/*/*.extxyz
+**/*/*.model

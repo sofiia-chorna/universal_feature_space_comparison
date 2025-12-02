@@ -14,27 +14,27 @@ from src.utils import get_stratified_indices
 
 MAP = {
     "bespoke": {
-        "target": "data/features/lips/pet-fine-tuning/bespoke.npy",
+        "target": "data/features/lips/bespoke.npy",
         "source": "models/pet/fine-tuning/bespoke/outputs",
         "max_epoch": 1940,
     },
     "ff": {
-        "target": "data/features/lips/pet-fine-tuning/ff.npy",
+        "target": "data/features/lips/ff.npy",
         "source": "models/pet/fine-tuning/ff/outputs",
         "max_epoch": 490,
     },
     "hf": {
-        "target": "data/features/lips/pet-fine-tuning/hf.npy",
+        "target": "data/features/lips/hf.npy",
         "source": "models/pet/fine-tuning/hf/outputs",
         "max_epoch": 490,
     },
     "ftl": {
-        "target": "data/features/lips/pet-fine-tuning/ftl.npy",
+        "target": "data/features/lips/ftl.npy",
         "source": "models/pet/fine-tuning/tl/outputs",
         "max_epoch": 990,
     },
     "htl": {
-        "target": "data/features/lips/pet-fine-tuning/htl.npy",
+        "target": "data/features/lips/htl.npy",
         "source": "models/pet/fine-tuning/htl/outputs",
         "max_epoch": 990,
     },
