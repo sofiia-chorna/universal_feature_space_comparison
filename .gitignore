@@ -212,4 +212,5 @@ data/
 **/*/*.xyz
 **/*/*.extxyz
 **/*/*.model
+**/*/*.model.omat_pbe
 **/*/*.pth
