@@ -11,8 +11,8 @@ import numpy as np
 from src.errors import compute_model_vs_model
 from src.utils import get_stratified_indices
 
-KEY = "mad"
-SAVE_DIR = f"./results/cumulants/umlips"
+KEY = "umlips"
+SAVE_DIR = f"./results/cumulants"
 os.makedirs(SAVE_DIR, exist_ok=True)
 
 

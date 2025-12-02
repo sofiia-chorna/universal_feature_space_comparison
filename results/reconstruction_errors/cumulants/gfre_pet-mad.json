@@ -1,0 +1,402 @@
+{
+  "1_cumulant": {
+    "1_cumulant": {
+      "A": "1_cumulant",
+      "B": "1_cumulant",
+      "A_to_B": 6.218693877684401e-15,
+      "B_to_A": 6.218693877684401e-15
+    },
+    "2_cumulant": {
+      "A": "2_cumulant",
+      "B": "1_cumulant",
+      "A_to_B": 2.9701208209331563e-15,
+      "B_to_A": 0.24139632306609304
+    },
+    "3_cumulant": {
+      "A": "3_cumulant",
+      "B": "1_cumulant",
+      "A_to_B": 3.739895313118624e-15,
+      "B_to_A": 0.464605915476238
+    },
+    "4_cumulant": {
+      "A": "4_cumulant",
+      "B": "1_cumulant",
+      "A_to_B": 3.4932090111087862e-15,
+      "B_to_A": 0.599851704344262
+    },
+    "5_cumulant": {
+      "A": "5_cumulant",
+      "B": "1_cumulant",
+      "A_to_B": 4.134419940886979e-15,
+      "B_to_A": 0.6604954152072434
+    },
+    "6_cumulant": {
+      "A": "6_cumulant",
+      "B": "1_cumulant",
+      "A_to_B": 5.159317057476627e-15,
+      "B_to_A": 0.7365546551546525
+    },
+    "7_cumulant": {
+      "A": "7_cumulant",
+      "B": "1_cumulant",
+      "A_to_B": 5.0354283507086095e-15,
+      "B_to_A": 0.7880408600158186
+    },
+    "8_cumulant": {
+      "A": "8_cumulant",
+      "B": "1_cumulant",
+      "A_to_B": 5.90375487603962e-15,
+      "B_to_A": 0.8039415459042016
+    }
+  },
+  "2_cumulant": {
+    "1_cumulant": {
+      "A": "1_cumulant",
+      "B": "2_cumulant",
+      "A_to_B": 0.24139632306609304,
+      "B_to_A": 2.9701208209331563e-15
+    },
+    "2_cumulant": {
+      "A": "2_cumulant",
+      "B": "2_cumulant",
+      "A_to_B": 2.895644853592196e-15,
+      "B_to_A": 2.895644853592196e-15
+    },
+    "3_cumulant": {
+      "A": "3_cumulant",
+      "B": "2_cumulant",
+      "A_to_B": 4.2550310322708196e-15,
+      "B_to_A": 0.3840320305745839
+    },
+    "4_cumulant": {
+      "A": "4_cumulant",
+      "B": "2_cumulant",
+      "A_to_B": 3.408840583489018e-15,
+      "B_to_A": 0.5449157370954166
+    },
+    "5_cumulant": {
+      "A": "5_cumulant",
+      "B": "2_cumulant",
+      "A_to_B": 3.986263831105185e-15,
+      "B_to_A": 0.6188230108864742
+    },
+    "6_cumulant": {
+      "A": "6_cumulant",
+      "B": "2_cumulant",
+      "A_to_B": 4.96101401563575e-15,
+      "B_to_A": 0.6912787831120113
+    },
+    "7_cumulant": {
+      "A": "7_cumulant",
+      "B": "2_cumulant",
+      "A_to_B": 4.833430450666028e-15,
+      "B_to_A": 0.7542838721420964
+    },
+    "8_cumulant": {
+      "A": "8_cumulant",
+      "B": "2_cumulant",
+      "A_to_B": 5.6768996427140985e-15,
+      "B_to_A": 0.7684877139071731
+    }
+  },
+  "3_cumulant": {
+    "1_cumulant": {
+      "A": "1_cumulant",
+      "B": "3_cumulant",
+      "A_to_B": 0.464605915476238,
+      "B_to_A": 3.739895313118624e-15
+    },
+    "2_cumulant": {
+      "A": "2_cumulant",
+      "B": "3_cumulant",
+      "A_to_B": 0.3840320305745839,
+      "B_to_A": 4.2550310322708196e-15
+    },
+    "3_cumulant": {
+      "A": "3_cumulant",
+      "B": "3_cumulant",
+      "A_to_B": 4.623677798695295e-15,
+      "B_to_A": 4.623677798695295e-15
+    },
+    "4_cumulant": {
+      "A": "4_cumulant",
+      "B": "3_cumulant",
+      "A_to_B": 3.2749296248588754e-15,
+      "B_to_A": 0.41509771308215604
+    },
+    "5_cumulant": {
+      "A": "5_cumulant",
+      "B": "3_cumulant",
+      "A_to_B": 3.693067144519103e-15,
+      "B_to_A": 0.4398097384300786
+    },
+    "6_cumulant": {
+      "A": "6_cumulant",
+      "B": "3_cumulant",
+      "A_to_B": 4.5987097965862e-15,
+      "B_to_A": 0.5742467807388596
+    },
+    "7_cumulant": {
+      "A": "7_cumulant",
+      "B": "3_cumulant",
+      "A_to_B": 4.379158802362346e-15,
+      "B_to_A": 0.6549725052127873
+    },
+    "8_cumulant": {
+      "A": "8_cumulant",
+      "B": "3_cumulant",
+      "A_to_B": 5.297374382085622e-15,
+      "B_to_A": 0.6911044539608788
+    }
+  },
+  "4_cumulant": {
+    "1_cumulant": {
+      "A": "1_cumulant",
+      "B": "4_cumulant",
+      "A_to_B": 0.599851704344262,
+      "B_to_A": 3.4932090111087862e-15
+    },
+    "2_cumulant": {
+      "A": "2_cumulant",
+      "B": "4_cumulant",
+      "A_to_B": 0.5449157370954166,
+      "B_to_A": 3.408840583489018e-15
+    },
+    "3_cumulant": {
+      "A": "3_cumulant",
+      "B": "4_cumulant",
+      "A_to_B": 0.41509771308215604,
+      "B_to_A": 3.2749296248588754e-15
+    },
+    "4_cumulant": {
+      "A": "4_cumulant",
+      "B": "4_cumulant",
+      "A_to_B": 3.1037286930119466e-15,
+      "B_to_A": 3.1037286930119466e-15
+    },
+    "5_cumulant": {
+      "A": "5_cumulant",
+      "B": "4_cumulant",
+      "A_to_B": 3.490462840313396e-15,
+      "B_to_A": 0.27382124073239766
+    },
+    "6_cumulant": {
+      "A": "6_cumulant",
+      "B": "4_cumulant",
+      "A_to_B": 4.353542657085335e-15,
+      "B_to_A": 0.43910201841257424
+    },
+    "7_cumulant": {
+      "A": "7_cumulant",
+      "B": "4_cumulant",
+      "A_to_B": 4.082344062913734e-15,
+      "B_to_A": 0.5183935474836221
+    },
+    "8_cumulant": {
+      "A": "8_cumulant",
+      "B": "4_cumulant",
+      "A_to_B": 4.87225478197996e-15,
+      "B_to_A": 0.591592190316955
+    }
+  },
+  "5_cumulant": {
+    "1_cumulant": {
+      "A": "1_cumulant",
+      "B": "5_cumulant",
+      "A_to_B": 0.6604954152072434,
+      "B_to_A": 4.134419940886979e-15
+    },
+    "2_cumulant": {
+      "A": "2_cumulant",
+      "B": "5_cumulant",
+      "A_to_B": 0.6188230108864742,
+      "B_to_A": 3.986263831105185e-15
+    },
+    "3_cumulant": {
+      "A": "3_cumulant",
+      "B": "5_cumulant",
+      "A_to_B": 0.4398097384300786,
+      "B_to_A": 3.693067144519103e-15
+    },
+    "4_cumulant": {
+      "A": "4_cumulant",
+      "B": "5_cumulant",
+      "A_to_B": 0.27382124073239766,
+      "B_to_A": 3.490462840313396e-15
+    },
+    "5_cumulant": {
+      "A": "5_cumulant",
+      "B": "5_cumulant",
+      "A_to_B": 3.2761075067671537e-15,
+      "B_to_A": 3.2761075067671537e-15
+    },
+    "6_cumulant": {
+      "A": "6_cumulant",
+      "B": "5_cumulant",
+      "A_to_B": 4.220730368900088e-15,
+      "B_to_A": 0.3886072330660891
+    },
+    "7_cumulant": {
+      "A": "7_cumulant",
+      "B": "5_cumulant",
+      "A_to_B": 3.796373039026801e-15,
+      "B_to_A": 0.44746329611866986
+    },
+    "8_cumulant": {
+      "A": "8_cumulant",
+      "B": "5_cumulant",
+      "A_to_B": 4.6639540743938366e-15,
+      "B_to_A": 0.5258298142480375
+    }
+  },
+  "6_cumulant": {
+    "1_cumulant": {
+      "A": "1_cumulant",
+      "B": "6_cumulant",
+      "A_to_B": 0.7365546551546525,
+      "B_to_A": 5.159317057476627e-15
+    },
+    "2_cumulant": {
+      "A": "2_cumulant",
+      "B": "6_cumulant",
+      "A_to_B": 0.6912787831120113,
+      "B_to_A": 4.96101401563575e-15
+    },
+    "3_cumulant": {
+      "A": "3_cumulant",
+      "B": "6_cumulant",
+      "A_to_B": 0.5742467807388596,
+      "B_to_A": 4.5987097965862e-15
+    },
+    "4_cumulant": {
+      "A": "4_cumulant",
+      "B": "6_cumulant",
+      "A_to_B": 0.43910201841257424,
+      "B_to_A": 4.353542657085335e-15
+    },
+    "5_cumulant": {
+      "A": "5_cumulant",
+      "B": "6_cumulant",
+      "A_to_B": 0.3886072330660891,
+      "B_to_A": 4.220730368900088e-15
+    },
+    "6_cumulant": {
+      "A": "6_cumulant",
+      "B": "6_cumulant",
+      "A_to_B": 3.965235681494829e-15,
+      "B_to_A": 3.965235681494829e-15
+    },
+    "7_cumulant": {
+      "A": "7_cumulant",
+      "B": "6_cumulant",
+      "A_to_B": 3.571945780363294e-15,
+      "B_to_A": 0.3423769674335475
+    },
+    "8_cumulant": {
+      "A": "8_cumulant",
+      "B": "6_cumulant",
+      "A_to_B": 4.3286683579609504e-15,
+      "B_to_A": 0.43998397389248395
+    }
+  },
+  "7_cumulant": {
+    "1_cumulant": {
+      "A": "1_cumulant",
+      "B": "7_cumulant",
+      "A_to_B": 0.7880408600158186,
+      "B_to_A": 5.0354283507086095e-15
+    },
+    "2_cumulant": {
+      "A": "2_cumulant",
+      "B": "7_cumulant",
+      "A_to_B": 0.7542838721420964,
+      "B_to_A": 4.833430450666028e-15
+    },
+    "3_cumulant": {
+      "A": "3_cumulant",
+      "B": "7_cumulant",
+      "A_to_B": 0.6549725052127873,
+      "B_to_A": 4.379158802362346e-15
+    },
+    "4_cumulant": {
+      "A": "4_cumulant",
+      "B": "7_cumulant",
+      "A_to_B": 0.5183935474836221,
+      "B_to_A": 4.082344062913734e-15
+    },
+    "5_cumulant": {
+      "A": "5_cumulant",
+      "B": "7_cumulant",
+      "A_to_B": 0.44746329611866986,
+      "B_to_A": 3.796373039026801e-15
+    },
+    "6_cumulant": {
+      "A": "6_cumulant",
+      "B": "7_cumulant",
+      "A_to_B": 0.3423769674335475,
+      "B_to_A": 3.571945780363294e-15
+    },
+    "7_cumulant": {
+      "A": "7_cumulant",
+      "B": "7_cumulant",
+      "A_to_B": 3.397282712305798e-15,
+      "B_to_A": 3.397282712305798e-15
+    },
+    "8_cumulant": {
+      "A": "8_cumulant",
+      "B": "7_cumulant",
+      "A_to_B": 4.174758742927382e-15,
+      "B_to_A": 0.3561101442618719
+    }
+  },
+  "8_cumulant": {
+    "1_cumulant": {
+      "A": "1_cumulant",
+      "B": "8_cumulant",
+      "A_to_B": 0.8039415459042016,
+      "B_to_A": 5.90375487603962e-15
+    },
+    "2_cumulant": {
+      "A": "2_cumulant",
+      "B": "8_cumulant",
+      "A_to_B": 0.7684877139071731,
+      "B_to_A": 5.6768996427140985e-15
+    },
+    "3_cumulant": {
+      "A": "3_cumulant",
+      "B": "8_cumulant",
+      "A_to_B": 0.6911044539608788,
+      "B_to_A": 5.297374382085622e-15
+    },
+    "4_cumulant": {
+      "A": "4_cumulant",
+      "B": "8_cumulant",
+      "A_to_B": 0.591592190316955,
+      "B_to_A": 4.87225478197996e-15
+    },
+    "5_cumulant": {
+      "A": "5_cumulant",
+      "B": "8_cumulant",
+      "A_to_B": 0.5258298142480375,
+      "B_to_A": 4.6639540743938366e-15
+    },
+    "6_cumulant": {
+      "A": "6_cumulant",
+      "B": "8_cumulant",
+      "A_to_B": 0.43998397389248395,
+      "B_to_A": 4.3286683579609504e-15
+    },
+    "7_cumulant": {
+      "A": "7_cumulant",
+      "B": "8_cumulant",
+      "A_to_B": 0.3561101442618719,
+      "B_to_A": 4.174758742927382e-15
+    },
+    "8_cumulant": {
+      "A": "8_cumulant",
+      "B": "8_cumulant",
+      "A_to_B": 4.114712374838618e-15,
+      "B_to_A": 4.114712374838618e-15
+    }
+  }
+}

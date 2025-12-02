@@ -14,7 +14,7 @@ from src.utils import get_stratified_indices
 
 MODEL = "pet"  #  or "mace"
 
-KEY = "mad"
+KEY = "pet-mad"
 SAVE_DIR = f"./results/cumulants/"
 os.makedirs(SAVE_DIR, exist_ok=True)
 
