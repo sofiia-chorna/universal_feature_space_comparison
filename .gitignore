@@ -212,3 +212,4 @@ data/
 **/*/*.xyz
 **/*/*.extxyz
 **/*/*.model
+**/*/*.pth
