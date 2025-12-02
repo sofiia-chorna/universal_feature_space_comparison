@@ -9,7 +9,7 @@ import json
 
 import numpy as np
 from src.errors import compute_model_vs_model
-from src.utils import get_random_indices, get_stratified_indices
+from src.utils import get_stratified_indices
 
 
 MODEL = "pet"  #  or "mace"
