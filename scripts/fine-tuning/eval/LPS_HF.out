@@ -1,0 +1,12 @@
+[2025-11-27 09:32:22][INFO] - Logging to file is disabled.
+[2025-11-27 09:32:22][INFO] - Package version: 2025.11
+[2025-11-27 09:32:22][INFO] - Package directory: /home/chorna/miniconda3/envs/pet/lib/python3.10/site-packages/metatrain
+[2025-11-27 09:32:22][INFO] - Working directory: /home/chorna/workspace/carto-speedrun
+[2025-11-27 09:32:22][INFO] - Executed command: mtt eval -b 32 /scratch/tisi/cartospeed/head_finetuning/2/model.pt scripts/lips/eval.yaml
+[2025-11-27 09:32:22][INFO] - Setting up evaluation set.
+[2025-11-27 09:32:22][INFO] - Evaluating dataset
+[2025-11-27 09:32:22][INFO] - Forces found in section 'energy', we will use this gradient to train the model
+[2025-11-27 09:32:23][WARNING] - No stress found in section 'energy'.
+[2025-11-27 09:32:24][INFO] - Running on device cuda with dtype torch.float32
+[2025-11-27 09:32:33][INFO] - energy RMSE (per atom): 8.5733 meV | energy MAE (per atom): 6.9762 meV | forces RMSE: 96.300 meV/A | forces MAE: 58.283 meV/A
+[2025-11-27 09:32:33][INFO] - Evaluation time: 1.21 s [0.0470 ± 0.0142 ms per atom]

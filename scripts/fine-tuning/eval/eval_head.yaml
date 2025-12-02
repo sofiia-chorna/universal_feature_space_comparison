@@ -1,0 +1,10 @@
+systems: 
+  read_from: "../test.extxyz"
+  length_unit: angstrom
+
+targets:
+    mtt::LPS:
+      key: "energy"
+      unit: "eV"
+      forces:
+        key: "forces"
