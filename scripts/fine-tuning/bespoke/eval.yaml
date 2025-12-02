@@ -1,5 +1,5 @@
 systems: 
-    read_from: "../../test.extxyz"
+    read_from: "../test.extxyz"
     length_unit: angstrom
 targets:
     energy:

@@ -4,15 +4,10 @@ architecture:
   name: "pet"
   training:
     finetune:
-      method: "heads"
+      method: "full" # This stands for the full fine-tuning
       read_from: "../pet-mad-v1.0.2.ckpt"
-      config:
-        head_modules: ['node_heads', 'edge_heads']
-        last_layer_modules: ['node_last_layers', 'edge_last_layers']
     learning_rate: 1e-5
-    num_epochs: 500
-    checkpoint_interval: 10
-    num_epochs_warmup: 5
+    num_epochs: 50
 
 
 # training set section
@@ -25,29 +20,27 @@ training_set:
       key: "energy"
       unit: "eV" # very important to run simulations
       forces:
-          read_from: "../train.extxyz"
-          key: "forces"
+        key: "force"
 
 validation_set:
   systems: 
-    read_from: "../val.extxyz"
+    read_from: "../val.xyz"
     length_unit: angstrom
   targets:
     energy:
       key: "energy"
       unit: "eV" # very important to run simulations
       forces:
-          read_from: "../val.extxyz"
-          key: "forces"
- 
+        key: "force"
 
 
 test_set:
   systems: 
-    read_from: "../test.extxyz"
+    read_from: "../test.xyz"
     length_unit: angstrom
   targets:
     energy:
       key: "energy"
       unit: "eV" # very important to run simulationsA
-
+      forces:
+        key: "force"

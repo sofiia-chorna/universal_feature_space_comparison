@@ -5,7 +5,7 @@ architecture:
   training:
     finetune:
       method: "heads"
-      read_from: "../../pet-mad-v1.0.2.ckpt"
+      read_from: "../pet-mad-v1.0.2.ckpt"
       config:
         head_modules: ['node_heads', 'edge_heads']
         last_layer_modules: ['node_last_layers', 'edge_last_layers']
@@ -18,7 +18,7 @@ architecture:
 # training set section
 training_set:
   systems: 
-    read_from: "../../train.extxyz"
+    read_from: "../train.extxyz"
     length_unit: angstrom
   targets:
     mtt::LPS:
@@ -30,7 +30,7 @@ training_set:
 
 validation_set:
   systems: 
-    read_from: "../../val.extxyz"
+    read_from: "../val.extxyz"
     length_unit: angstrom
   targets:
     mtt::LPS:
@@ -43,7 +43,7 @@ validation_set:
 
 test_set:
   systems: 
-    read_from: "../../test.extxyz"
+    read_from: "../test.extxyz"
     length_unit: angstrom
   targets:
     mtt::LPS:
