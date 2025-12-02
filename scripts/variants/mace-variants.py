@@ -13,7 +13,7 @@ from src.utils import get_stratified_indices
 
 
 KEY = "mace-variants"
-SAVE_DIR = "./results/reconstruction_errors/mace/variants"
+SAVE_DIR = "./results/reconstruction_errors/variants/mace"
 os.makedirs(SAVE_DIR, exist_ok=True)
 
 
