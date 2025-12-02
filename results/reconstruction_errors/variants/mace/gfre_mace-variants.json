@@ -1,0 +1,106 @@
+{
+  "MATPES-PBE": {
+    "MATPES-PBE": {
+      "A": "MATPES-PBE",
+      "B": "MATPES-PBE",
+      "A_to_B": 1.6913915487802406e-15,
+      "B_to_A": 1.6913915487802406e-15
+    },
+    "MATPES-R2SCAN": {
+      "A": "MATPES-R2SCAN",
+      "B": "MATPES-PBE",
+      "A_to_B": 0.2715286278746052,
+      "B_to_A": 0.2746036605178698
+    },
+    "MPTRAJ": {
+      "A": "MPTRAJ",
+      "B": "MATPES-PBE",
+      "A_to_B": 0.3390338383292933,
+      "B_to_A": 0.28203112676758907
+    },
+    "OMAT": {
+      "A": "OMAT",
+      "B": "MATPES-PBE",
+      "A_to_B": 0.3002916591984921,
+      "B_to_A": 0.37868337708868616
+    }
+  },
+  "MATPES-R2SCAN": {
+    "MATPES-PBE": {
+      "A": "MATPES-PBE",
+      "B": "MATPES-R2SCAN",
+      "A_to_B": 0.2746036605178698,
+      "B_to_A": 0.2715286278746052
+    },
+    "MATPES-R2SCAN": {
+      "A": "MATPES-R2SCAN",
+      "B": "MATPES-R2SCAN",
+      "A_to_B": 1.5702869712433415e-15,
+      "B_to_A": 1.5702869712433415e-15
+    },
+    "MPTRAJ": {
+      "A": "MPTRAJ",
+      "B": "MATPES-R2SCAN",
+      "A_to_B": 0.4306292865906017,
+      "B_to_A": 0.29887022690256876
+    },
+    "OMAT": {
+      "A": "OMAT",
+      "B": "MATPES-R2SCAN",
+      "A_to_B": 0.26104754372850575,
+      "B_to_A": 0.2841334383613107
+    }
+  },
+  "MPTRAJ": {
+    "MATPES-PBE": {
+      "A": "MATPES-PBE",
+      "B": "MPTRAJ",
+      "A_to_B": 0.28203112676758907,
+      "B_to_A": 0.3390338383292933
+    },
+    "MATPES-R2SCAN": {
+      "A": "MATPES-R2SCAN",
+      "B": "MPTRAJ",
+      "A_to_B": 0.29887022690256876,
+      "B_to_A": 0.4306292865906017
+    },
+    "MPTRAJ": {
+      "A": "MPTRAJ",
+      "B": "MPTRAJ",
+      "A_to_B": 3.4910377490159757e-15,
+      "B_to_A": 3.4910377490159757e-15
+    },
+    "OMAT": {
+      "A": "OMAT",
+      "B": "MPTRAJ",
+      "A_to_B": 0.2938118992826682,
+      "B_to_A": 0.4778430819774514
+    }
+  },
+  "OMAT": {
+    "MATPES-PBE": {
+      "A": "MATPES-PBE",
+      "B": "OMAT",
+      "A_to_B": 0.37868337708868616,
+      "B_to_A": 0.3002916591984921
+    },
+    "MATPES-R2SCAN": {
+      "A": "MATPES-R2SCAN",
+      "B": "OMAT",
+      "A_to_B": 0.2841334383613107,
+      "B_to_A": 0.26104754372850575
+    },
+    "MPTRAJ": {
+      "A": "MPTRAJ",
+      "B": "OMAT",
+      "A_to_B": 0.4778430819774514,
+      "B_to_A": 0.2938118992826682
+    },
+    "OMAT": {
+      "A": "OMAT",
+      "B": "OMAT",
+      "A_to_B": 1.928088036790168e-15,
+      "B_to_A": 1.928088036790168e-15
+    }
+  }
+}
