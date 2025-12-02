@@ -18,6 +18,7 @@ if VARIANT not in ["LL", "BB"]:
 
 
 MODEL_PATHS = {
+    "pet-mad": "models/pet/pet-mad-v1.0.2.pt",
     # uPET large-scale models
     "omatpes": "models/pet/pet-omatpes-l-v0.1.0.pt",
     "omat-l": "models/pet/pet-omat-l-v1.0.0.pt",
