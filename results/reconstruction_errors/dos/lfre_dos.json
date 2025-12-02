@@ -1,0 +1,22 @@
+{
+  "PET-MAD": {
+    "PET-MAD": {
+      "A_to_B": 0.0023,
+      "B_to_A": 0.0023
+    },
+    "PET-MAD-DOS": {
+      "A_to_B": 0.2835,
+      "B_to_A": 0.3905
+    }
+  },
+  "PET-MAD-DOS": {
+    "PET-MAD-DOS": {
+      "A_to_B": 0.0155,
+      "B_to_A": 0.0155
+    },
+      "PET-MAD": {
+        "A_to_B": 0.3905,
+        "B_to_A": 0.2835
+    }
+  }
+}
