@@ -33,7 +33,9 @@ MODEL_PATHS = {
     "ff": "models/pet/fine-tuning/ff/model.pt",
     "hf": "models/pet/fine-tuning/hf/model.pt",
     "ftl": "models/pet/fine-tuning/tl/model.pt",
-    "htl": "models/pet/fine-tuning/htl/model.pt"
+    "htl": "models/pet/fine-tuning/htl/model.pt",
+    # PET-MAD-DOS
+    "pet-mad-dos": "models/pet/pet-mad-dos.pt",
 }
 
 if MODEL_KEY not in MODEL_PATHS:
