@@ -12,8 +12,8 @@ from src.errors import compute_model_vs_model
 from src.utils import get_stratified_indices
 
 
-KEY = "lps"
-SAVE_DIR = "./results/reconstruction_errors/fine-tuning/model_vs_model"
+KEY = "model_vs_model"
+SAVE_DIR = "./results/reconstruction_errors/fine-tuning"
 os.makedirs(SAVE_DIR, exist_ok=True)
 
 
