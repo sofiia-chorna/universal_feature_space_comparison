@@ -207,3 +207,11 @@ marimo/_lsp/
 __marimo__/
 
 data/
+scripts/fine-tuning/bespoke/outputs/
+scripts/fine-tuning/ff/outputs/
+scripts/fine-tuning/hf/outputs/
+scripts/fine-tuning/fhl/outputs/
+scripts/fine-tuning/htl/outputs/
+
+**/*/*.pt
+**/*/*.ckpt

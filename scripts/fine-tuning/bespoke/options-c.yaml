@@ -1,0 +1,60 @@
+seed: 22
+
+architecture:
+  name: "pet"
+  model:
+    cutoff: 5
+    d_pet: 256
+    num_heads: 8
+    num_attention_layers: 2
+    num_gnn_layers: 2
+  training:
+    learning_rate: 0.5e-4
+    num_epochs: 2000
+    checkpoint_interval: 10
+    num_epochs_warmup: 5
+    loss:
+      energy:
+        type: mse
+        weight: 1
+        reduction: mean
+      forces:
+        type: mse
+        weight: 0.05
+        reduction: mean
+
+
+# training set section
+training_set:
+  systems: 
+    read_from: "../../train.extxyz"
+    length_unit: angstrom
+  targets:
+    energy:
+      key: "energy"
+      unit: "eV" # very important to run simulations
+      forces:
+        key: "forces"
+
+validation_set:
+  systems: 
+    read_from: "../../val.extxyz"
+    length_unit: angstrom
+  targets:
+    energy:
+      key: "energy"
+      unit: "eV" # very important to run simulations
+      forces:
+        key: "forces"
+
+
+test_set:
+  systems: 
+    read_from: "../../test.extxyz"
+    length_unit: angstrom
+  targets:
+    energy:
+      key: "energy"
+      unit: "eV" # very important to run simulationsA
+      forces:
+        key: "forces"

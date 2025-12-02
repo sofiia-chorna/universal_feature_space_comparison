@@ -1,0 +1,9 @@
+systems: 
+    read_from: "../../test.extxyz"
+    length_unit: angstrom
+targets:
+    energy:
+      key: "energy"
+      unit: "eV" # very important to run simulationsA
+      forces:
+        key: "forces"
