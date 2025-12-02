@@ -1,0 +1,58 @@
+{
+  "PET-MAD_BB": {
+    "PET-MAD_LL": {
+      "A": "PET-MAD_LL",
+      "B": "PET-MAD_BB",
+      "A_to_B": 0.08313010324164036,
+      "B_to_A": 0.08225801419670781
+    }
+  },
+  "MPTRAJ_BB": {
+    "MPTRAJ_LL": {
+      "A": "MPTRAJ_LL",
+      "B": "MPTRAJ_BB",
+      "A_to_B": 1.6913521875091515,
+      "B_to_A": 0.03813725990290328
+    }
+  },
+  "OMATPES_BB": {
+    "OMATPES_LL": {
+      "A": "OMATPES_LL",
+      "B": "OMATPES_BB",
+      "A_to_B": 0.22421232167965383,
+      "B_to_A": 0.08171319038194201
+    }
+  },
+  "OMAT-L_BB": {
+    "OMAT-L_LL": {
+      "A": "OMAT-L_LL",
+      "B": "OMAT-L_BB",
+      "A_to_B": 0.181940242356174,
+      "B_to_A": 0.04568261699298893
+    }
+  },
+  "OAM_BB": {
+    "OAM_LL": {
+      "A": "OAM_LL",
+      "B": "OAM_BB",
+      "A_to_B": 0.22276788226075214,
+      "B_to_A": 0.08671429346520333
+    }
+  },
+  "OMAD_BB": {
+    "OMAD_LL": {
+      "A": "OMAD_LL",
+      "B": "OMAD_BB",
+      "A_to_B": 0.1895922789996553,
+      "B_to_A": 0.06275704159640502
+    }
+  },
+  "OMAT-M_BB": {
+    "OMAT-M_LL": {
+      "A": "OMAT-M_LL",
+      "B": "OMAT-M_BB",
+      "A_to_B": 0.14862325918870062,
+      "B_to_A": 0.06063324051401014
+    }
+  }
+}
