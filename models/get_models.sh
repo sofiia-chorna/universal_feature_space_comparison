@@ -32,12 +32,12 @@ echo "All models downloaded successfully."
 
 echo "=== Creating PET environment ==="
 
-if ! conda env list | grep -q "^petenv"; then
-    conda create -y -n petenv python=3.10
+if ! conda env list | grep -q "^pet"; then
+    conda create -y -n pet python=3.10
 fi
 
 source "$(conda info --base)/etc/profile.d/conda.sh"
-conda activate petenv
+conda activate pet
 
 echo "=== Installing metatrain[pet] ==="
 pip install -q metatrain[pet]
