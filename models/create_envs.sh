@@ -2,31 +2,44 @@
 set -e
 
 ENV_DIR="envs"
-YAML_LIST=( "$ENV_DIR"/*.yaml )
 
 source "$(conda info --base)/etc/profile.d/conda.sh"
 
-echo "=== Conda environment creation script ==="
+if [ ! -d "$ENV_DIR" ]; then
+    echo "ERROR: Directory '$ENV_DIR' not found."
+    exit 1
+fi
+
+shopt -s nullglob
+YAML_LIST=("$ENV_DIR"/*.yml)
+shopt -u nullglob
+
+if [ ${#YAML_LIST[@]} -eq 0 ]; then
+    echo "ERROR: No .yml files found in $ENV_DIR/"
+    exit 1
+fi
+
+echo "Creating conda environments from $ENV_DIR/"
+echo
 
 for yaml in "${YAML_LIST[@]}"; do
-    env_name=$(grep -E '^name:' "${ENV_DIR}/${yaml}" | awk '{print $2}')
+    echo "Processing $yaml"
 
-    if [[ -z "$env_name" ]]; then
-        echo "ERROR: Could not read env name from $yaml"
+    env_name=$(grep -E '^name:' "$yaml" | awk '{print $2}')
+
+    if [ -z "$env_name" ]; then
+        echo "ERROR: Could not read name: field in $yaml"
         exit 1
     fi
-
-    echo ""
-    echo "=== Processing environment: $env_name ==="
 
     if conda env list | grep -q "^${env_name} "; then
         echo "Environment '$env_name' already exists, skipping"
     else
-        echo "Creating environment '$env_name' from ${yaml}"
-        conda env create -f "${ENV_DIR}/${yaml}"
-        echo "Created env: $env_name"
+        echo "Creating environment '$env_name'"
+        conda env create -f "$yaml"
     fi
+
+    echo
 done
 
-echo ""
-echo "All environments processed successfully"
+echo "Done."
