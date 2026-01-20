@@ -1,8 +1,12 @@
-This repository contains scripts to reproduce results of the paper "Comparing the latent features of universal
-machine-learning interatomic potentials" (preprint: https://www.arxiv.org/abs/2512.05717).
+# Comparing the latent features of universal machine-learning interatomic potentials
+This repository contains scripts to reproduce results from the paper "Comparing the latent features of universal machine-learning interatomic potentials" (preprint: https://arxiv.org/abs/2512.05717).
 
 ## Abstract
 The past few years have seen the development of "universal" machine-learning interatomic potentials (uMLIPs) capable of approximating the ground-state potential energy surface across a wide range of chemical structures and compositions with reasonable accuracy. While these models differ in the architecture and the dataset used, they share the ability to compress a staggering amount of chemical information into descriptive latent features. Herein, we systematically analyze what the different uMLIPs have learned by quantitatively assessing the relative information content of their latent features with feature reconstruction errors as metrics, and observing how the trends are affected by the choice of training set and training protocol. We find that the uMLIPs encode chemical space in significantly distinct ways, with substantial cross-model feature reconstruction errors. When variants of the same model architecture are considered, trends become dependent on the dataset, target, and training protocol of choice. We also observe that fine-tuning of a uMLIP retains a strong pre-training bias in the latent features. Finally, we discuss how atom-level features, which are directly output by MLIPs, can be compressed into global structure-level features via concatenation of progressive cumulants, each adding significantly new information about the variability across the atomic environments within a given system.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b0b0dcb8-869f-4f0f-a3a9-298c5eb62609" alt="cover" width="600">
+</p>
 
 ## Project structure
 
