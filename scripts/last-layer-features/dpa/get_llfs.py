@@ -1,12 +1,13 @@
+import os
+import sys
+
 import ase.io
 import numpy as np
 import torch
 from deepmd.infer import DeepPot
-import sys
 
-
-if len(sys.argv) < 2:
-    print("Usage: python get_llfs.py [dpa_branch]")
+if len(sys.argv) < 3:
+    print("Usage: python get_llfs.py [dpa_branch] [feature_type]")
     sys.exit(1)
 
 task = sys.argv[1]
@@ -15,7 +16,11 @@ print("task", task)
 if task not in ["Mptraj", "Omat24", "OC20M", "SPICE2", "ODAC23"]:
     raise ValueError(f"Invalid model name")
 
-OUTPUT_PATH = f"data/features/mad/umlips/dpa/dpa-{task}"  #  or "data/features/alexandria/umlips/dpa/dpa-{task}"
+VARIANT = sys.argv[2].upper()
+if VARIANT is None:
+    VARIANT = "LL"
+
+OUTPUT_PATH = f"data/features/mad/umlips/dpa/dpa-{task}_{VARIANT}"  #  or "data/features/alexandria/umlips/dpa/dpa-{task}"
 print("OUTPUT_PATH", OUTPUT_PATH)
 
 DATASET_PATH = (
@@ -60,9 +65,14 @@ def extract_deepmd_features(structures, model_path, device="cpu"):
         unique_symbols = sorted(set(symbols))
         atype = [unique_symbols.index(sym) for sym in symbols]
 
-        fit_ll_atomic = dp.eval_fitting_last_layer(coord, cell, atype, device=device)
+        if VARIANT == "BB":
+            fit_atomic = dp.eval_fitting_backbone_layer(
+                coord, cell, atype, device=device
+            )
+        else:
+            fit_atomic = dp.eval_fitting_last_layer(coord, cell, atype, device=device)
 
-        atom_features = torch.from_numpy(fit_ll_atomic).squeeze(0).to(device)
+        atom_features = torch.from_numpy(fit_atomic).squeeze(0).to(device)
         all_atom_features.append(atom_features)
 
     return all_atom_features
