@@ -158,7 +158,7 @@ def main():
 
     for order in range(1, 9):
         desc = construct_struct_feats_cumulant(feats, dataset, order)
-        
+
         OUTPUT_PATH = f"./data/features/mad/cumulants/{order}_cumulant_{MODEL}"
         np.save(OUTPUT_PATH, desc)
 

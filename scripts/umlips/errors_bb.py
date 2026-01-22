@@ -18,11 +18,12 @@ os.makedirs(SAVE_DIR, exist_ok=True)
 
 
 FEAT_PATHS = {
-    "pet-mad":  "data/features/mad/umlips/pet/pet-mad_bb.npy",
+    "pet-mad": "data/features/mad/umlips/pet/pet-mad_bb.npy",
     "mace-mp-0b3": "data/features/mad/umlips/mace/mace_bb.npy",
     "uma-omat": "data/features/mad/umlips/uma/uma-omat_bb.npy",
-    "dpa-omat":"data/features/mad/umlips/dpa/dpa-Omat24_bb.npy",
+    "dpa-omat": "data/features/mad/umlips/dpa/dpa-Omat24_bb.npy",
 }
+
 
 def main(error_type="LFRE"):
     model_features = {name.upper(): np.load(path) for name, path in FEAT_PATHS.items()}

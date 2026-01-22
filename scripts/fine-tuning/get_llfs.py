@@ -18,7 +18,7 @@ MODEL_PATHS = {
     "ff": "scripts/fine-tuning/ff/model.pt",
     "hf": "scripts/fine-tuning/ff/model.pt",
     "ftl": "scripts/fine-tuning/ftl/model.pt",
-    "htl":  "scripts/fine-tuning/htl/model.pt",
+    "htl": "scripts/fine-tuning/htl/model.pt",
 }
 
 if MODEL_KEY not in MODEL_PATHS:
@@ -32,10 +32,10 @@ OUTPUT_DIR = f"data/features/lips"
 
 device = "cuda"
 
-REQUEST_KEY = "mtt::aux::energy_last_layer_features" 
+REQUEST_KEY = "mtt::aux::energy_last_layer_features"
 # or REQUEST_KEY = "mtt::aux::LPS_last_layer_features" if with new attached head (tranfer learning)
 
-OUTPUT_PATH =  f"{OUTPUT_DIR}/{MODEL_KEY}.npy"
+OUTPUT_PATH = f"{OUTPUT_DIR}/{MODEL_KEY}.npy"
 
 print("Model:", MODEL_KEY)
 print("Model path:", MODEL_PATH)

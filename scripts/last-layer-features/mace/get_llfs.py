@@ -76,7 +76,7 @@ MODEL_REGISTRY = {
             "mace-mh-1": {
                 "model_path": "models/mace/mace-mh-1.model.omat_pbe",
                 "output_path": "data/features/mad/umlips/mace/variants/mace-mh-1-omat",
-            }
+            },
         },
     },
 }
