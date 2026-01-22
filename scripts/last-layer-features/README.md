@@ -24,22 +24,23 @@ Then proceed with the scripts below. See `models/README.md` for environment setu
 
 - dpa/
   - `pre_steps.py` - installation steps required before running feature extraction for DPA
-  - `get_llfs.py`  - script that extracts last-layer features from a DPA model checkpoint for a dataset
-  - `run.sh`       - convenience wrapper to run preprocessing and the extraction pipeline for DPA
+  - `get_llfs.py` - script that extracts last-layer features from a DPA model checkpoint for a dataset. The script also supports extracting backbone features by passing the variant `BB` (usage: `python get_llfs.py <task> <LL|BB>`).
+  - `run.sh` - convenience wrapper to run preprocessing and the extraction pipeline for DPA
 
 - mace/
   - `pre_steps.sh` - installation script performing setup for MACE before extraction
   - `get_llfs.py`  - script that extracts last-layer features from a MACE model checkpoint for a dataset
+  - `get_bbfs.py` - script that extracts backbone (BB) descriptors/features for MACE models
   - `run.sh`       - convenience wrapper to run preprocessing and the extraction pipeline for MACE
 
 - pet/
   - `pre_steps.sh` - installation script performing setup for PET before extraction
-  - `get_llfs.py`  - script that extracts last-layer and backbone features from a PET model checkpoint for a dataset
+  - `get_llfs.py` - script that extracts last-layer (`LL`) or backbone (`BB`) features from a PET model checkpoint for a dataset (usage: `python get_llfs.py <model_key> <LL|BB>`)
   - `run.sh`       - convenience wrapper to run preprocessing and the extraction pipeline for PET
 
 - uma/
   - `pre_steps.sh` - installation script performing setup for UMA before extraction
-  - `get_llfs.py`  - script that extracts last-layer and backbone features from a UMA model checkpoint for a dataset
-  - `run.sh`       - convenience wrapper to run preprocessing and the extraction pipeline for UMA
+  - `get_llfs.py` - script that extracts last-layer (`LL`) or backbone (`BB`) features from a UMA model checkpoint for a dataset (usage: `python get_llfs.py <task> <BB|LL>`)
+  - `run.sh` - convenience wrapper to run preprocessing and the extraction pipeline for UMA
 
 Results of execution are saved in `data/features/mad/umlips/*`.
