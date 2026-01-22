@@ -10,11 +10,11 @@ from matplotlib import rcParams
 from matplotlib.legend_handler import HandlerBase
 from matplotlib.patches import Polygon, Rectangle
 
-DESIRED_ORDER = ["MACE-MP-0", "PET-MAD", "DPA-3.1", "UMA-S-1P1"]
+DESIRED_ORDER = ["MACE-MP-0B3", "PET-MAD", "DPA-3.1", "UMA-S-1P1"]
 
 MODEL_MAPPING = {
     "PETMAD": "PET-MAD",
-    "MACE": "MACE-MP-0",
+    "MACE": "MACE-MP-0B3",
     "UMA": "UMA-S-1P1",
     "DPA": "DPA-3.1",
 }
@@ -103,7 +103,7 @@ def plot_bidirectional_heatmaps(
     ax1.tick_params(axis="both", which="both", length=0, pad=10)
 
     if rotate_ticks:
-        ax1.set_xticklabels(ax1.get_xticklabels(), ha="right", rotation=45)
+        ax1.set_xticklabels(ax1.get_xticklabels(), ha="right", rotation=30)
     else:
         ax1.set_yticklabels(ax1.get_yticklabels(), ha="right", rotation=0)
 
@@ -145,7 +145,7 @@ def plot_bidirectional_heatmaps(
     ax2.tick_params(axis="both", which="both", length=0, pad=10)
 
     if rotate_ticks:
-        ax2.set_xticklabels(ax2.get_xticklabels(), ha="right", rotation=45)
+        ax2.set_xticklabels(ax2.get_xticklabels(), ha="right", rotation=30)
     else:
         ax2.set_xticklabels(ax2.get_xticklabels(), ha="center", rotation=0)
     ax2.set_title(title2, pad=12)
